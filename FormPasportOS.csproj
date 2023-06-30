@@ -14,10 +14,7 @@
 
   <ItemGroup>
     <Reference Include="Microsoft.Office.Interop.Excel">
-      <HintPath>C:\Windows\assembly\GAC_MSIL\Microsoft.Office.Interop.Excel\15.0.0.0__71e9bce111e9429c\Microsoft.Office.Interop.Excel.dll</HintPath>
-    </Reference>
-    <Reference Include="office">
-      <HintPath>C:\Windows\assembly\GAC_MSIL\office\15.0.0.0__71e9bce111e9429c\OFFICE.DLL</HintPath>
+      <HintPath>C:\Users\so02s\.nuget\packages\microsoft.office.interop.excel\15.0.4795.1001\lib\netstandard2.0\Microsoft.Office.Interop.Excel.dll</HintPath>
     </Reference>
   </ItemGroup>
 
