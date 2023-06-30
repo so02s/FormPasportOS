@@ -1,4 +1,4 @@
-﻿@page "/datefind"
+@page "/datefind"
 
 <h3>DateFind</h3>
 
@@ -9,8 +9,8 @@
 
 <h3>С</h3>
 <h3>По</h3>
-<input type="date">
-<input type="date">
+<input type="date" @bind="@myModelS.MyDate" />
+<input type="date" @bind="@myModelPO.MyDate" />
 <br />
 <br />
 
@@ -19,4 +19,24 @@
 </button>
 
 @code {
+
+    public class MyModel
+    {
+        public DateTime MyDate { get; set; }
+    }
+
+
+    private MyModel myModelS = new MyModel();
+
+    private void HandleSubmit()
+    {
+        DateTime selectedDateS = myModelS.MyDate;
+        DateTime selectedDatePO = myModelPO.MyDate;
+        // Дальнейшая обработка дат
+    }
+
+    private MyModel myModelPO = new MyModel();
+  
+
+
 }
